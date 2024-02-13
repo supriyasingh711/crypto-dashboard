@@ -25,7 +25,7 @@ const Topnav = () => {
       <MenuList>
 
           <MenuItem>Download</MenuItem>
-          <MenuItem>Download</MenuItem>
+          <MenuItem>Deal</MenuItem>
           <MenuItem>Download</MenuItem>
           <MenuItem>Download</MenuItem>
 
