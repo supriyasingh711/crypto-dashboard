@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Dashboard from './pages/Dashboard/Dashboard'
 
 function App() {
 
   return (
     <>
-hi hello
-hjjj
+<Dashboard/>
     </>
   )
 }
