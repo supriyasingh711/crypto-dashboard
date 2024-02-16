@@ -20,7 +20,7 @@ const Sidenav = () => {
     ]
   return (
     
-    <Stack justify="space-between" boxShadow="lg" maxW="26rem" h="100vh"  >
+    <Stack justify="space-between" boxShadow="lg" w="20rem" h="100vh"  >
         <Box>
         <Heading textAlign="center" fontSize="20px" as="h1" pt="3.5rem">Crypto Dashboard</Heading>
         {

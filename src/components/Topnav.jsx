@@ -6,7 +6,7 @@ const Topnav = () => {
   return (
     <Box boxShadow="xl">
  <HStack  
-  maxW="80rem"
+  w="60rem"
   h="16" 
   justify="space-between" 
   px="32"
@@ -24,10 +24,9 @@ const Topnav = () => {
      
       <MenuList>
 
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Deal</MenuItem>
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Download</MenuItem>
+          <MenuItem>Logout</MenuItem>
+          <MenuItem>Support</MenuItem>
+          
 
       </MenuList>
   </Menu>
