@@ -1,0 +1,21 @@
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.navbar ul {
+display: flex;
+list-style: none;
+}
+.navbar ul li a{
+margin-left: 15rem;
+text-decoration: none;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+}

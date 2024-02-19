@@ -1,12 +1,20 @@
 import { useState } from 'react'
 import './App.css'
-import Dashboard from './pages/Dashboard/Dashboard'
 
+import {Routes,Route} from 'react-router-dom'
+import Exchanges from './components/Exchanges'
+import CoinDetails from './components/CoinDetails'
+import Coins from './components/Coins'
 function App() {
 
   return (
     <>
-<Dashboard/>
+    <Routes>
+      <Route path="/" element={<Exchanges/>} />
+      <Route path="/coins" element={<Coins/>} />
+      <Route path="/coindetails/:id" element={<CoinDetails/>} />
+
+    </Routes>
     </>
   )
 }
