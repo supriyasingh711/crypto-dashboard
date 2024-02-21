@@ -9,7 +9,7 @@ const Header = () => {
             <div className="logo">
                 <h1>Cryptoverse</h1>
 
-                <FaEthereum/>
+                <FaEthereum color="orange" size={"25"}/>
             </div>
             <ul>
                 <li><Link to='/'>Home</Link></li>
