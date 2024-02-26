@@ -4,6 +4,7 @@ import { baseUrl } from './baseUrl'
 import axios from 'axios'
 import Loader from './Loader'
 import Header from './Header'
+import {Link} from 'react-router-dom'
 const Coins = () => {
 
     //we will make a loading effect like in real world applications
@@ -34,7 +35,7 @@ const Coins = () => {
         {
           coins.map((item,i)=>{
             return(
-             <CoinCard item={item} i={i} currencySymbol={currencySymbol} />
+             <CoinCard key={i} id={item.id} item={item} i={i} currencySymbol={currencySymbol} />
             )
           })
         }
@@ -43,9 +44,10 @@ const Coins = () => {
     </>
   )
 }
-const CoinCard=({item,i,currencySymbol})=>{
+const CoinCard=({item,i,currencySymbol,id})=>{
   const profit=item.price_change_percentage_24h>0;
   return(
+   <Link to={`/coins/${id}`} style={{color:"white",textDecoration:"none"}}>
     <div key={i} className='ex-cards'>
     <div className="image">
 <img height={"80px"} src={item.image} alt="" />
@@ -55,10 +57,11 @@ const CoinCard=({item,i,currencySymbol})=>{
     </div>
     <div className="price">{currencySymbol} {item.current_price.toFixed(0)}
     </div>
-    <div className="rank">
+    <div style={ profit ? {color:"lightgreen"}:{color:"red"}} className="rank">
 {profit ? "+" + item.price_change_percentage_24h.toFixed(2):item.price_change_percentage_24h.toFixed(2)}
     </div>
 </div>
+   </Link>
   )
 }
 export default Coins
