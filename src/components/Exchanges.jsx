@@ -28,9 +28,9 @@ const Exchanges = () => {
 }
 <div>
 {
-  exchanges.map((item)=>{
+  exchanges.map((item,i)=>{
     return (
-      <div className='ex-cards'>
+      <div key={i} className='ex-cards'>
       <div className="image">
 <img height={"80px"} src={item.image} alt="" />
       </div>

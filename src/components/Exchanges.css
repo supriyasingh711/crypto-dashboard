@@ -13,3 +13,12 @@
 .rank{
     width: 5rem;
 }
+.btns button{
+    padding: 1rem 2rem;
+    background-color: orange;
+    border: none;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
