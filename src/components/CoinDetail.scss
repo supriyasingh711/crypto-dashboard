@@ -1,0 +1,40 @@
+.coinDetail
+{
+    margin: 2.5rem;
+  
+    .coinInfo{
+        display: flex;
+        flex-direction: column;
+        row-gap:1rem;
+        .time{
+            font-weight: bold;
+            span{
+                color: green;
+            }
+        }
+        .coinImage{ 
+            width: 10%;
+            height: 10%;
+            margin: 2rem 0;
+            img{
+                width: 100%;
+            }
+        }
+        .coinName{
+            color: orange;
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+        }
+        .coinDescription{
+            width: 50%;
+            text-wrap: wrap;
+            text-align: justify;
+        }
+        .coinRank{
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+}
