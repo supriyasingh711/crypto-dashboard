@@ -8,6 +8,7 @@ import img from '../assets/pics/ethLogo.jpg'
 import './CoinDetail.scss'
 import {BiSolidUpArrow,BiSolidDownArrow} from "react-icons/bi";
 import {IoPulseOutline} from 'react-icons/io5'
+import CoinChart from './CoinChart'
 const CoinDetails = () => {
   const [coin,setCoin]=useState([])
   const [loading,setLoading]=useState(true)
@@ -67,7 +68,7 @@ const CoinDetails = () => {
           <div className="coinDescription">
             {coin.description['en'].split('.')[0]}
           </div>
-
+          <CoinChart/>
         </div>
   </div>
   
