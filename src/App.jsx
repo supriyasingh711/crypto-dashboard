@@ -13,7 +13,6 @@ function App() {
       <Route path="/" element={<Exchanges/>} />
       <Route path="/coins" element={<Coins/>} />
       <Route path="/coins/:id" element={<CoinDetails/>} />
-
     </Routes>
     </>
   )

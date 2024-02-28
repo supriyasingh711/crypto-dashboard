@@ -25,7 +25,7 @@ const Exchanges = () => {
   return (
 <>
 {
-  loading?<Loader/>:<><Header/><OurModel/></>
+  loading?<Loader/>:<><Header/></>
 }
 <div>
 {

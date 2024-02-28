@@ -25,12 +25,11 @@ const Coins = () => {
     },[])
   return (
     <>
-
       {
         loading?<Loader/>:<>
         <Header/>
         <div className="searchBar">
-          <input type="text" placeholder='Search Your Coin' onChange={(e)=>setSearch(e.target.value)} name="" id="" />
+          <input type="text" placeholder='Search Your Coin' onChange={(e)=>setSearch(e.target.value)} style={{padding:"1rem",margin:" 2rem"}} name="" id="" />
         </div>
         <div className="btns">
           <button onClick={()=>{setCurrency('inr')}}>inr</button>
@@ -60,10 +59,9 @@ const CoinCard=({item,i,currencySymbol,id})=>{
    <Link to={`/coins/${id}`} style={{color:"white",textDecoration:"none"}}>
     <div key={i} className='ex-cards'>
     <div className="image">
-<img height={"80px"} src={item.image} alt="" />
+        <img height={"80px"} src={item.image} alt="" />
     </div>
     <div className="name">{item.name}
-
     </div>
     <div className="price">{currencySymbol} {item.current_price.toFixed(0)}
     </div>
