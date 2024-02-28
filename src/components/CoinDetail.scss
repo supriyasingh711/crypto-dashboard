@@ -1,6 +1,9 @@
 .coinDetail
 {
     margin: 2.5rem;
+    // display: flex;
+    justify-content: space-around;
+    width: 100%;
   
     .coinInfo{
         display: flex;
@@ -13,7 +16,7 @@
             }
         }
         .coinImage{ 
-            width: 10%;
+            width:10%;
             height: 10%;
             margin: 2rem 0;
             img{
@@ -27,7 +30,7 @@
             letter-spacing: 0.2rem;
         }
         .coinDescription{
-            width: 50%;
+            width: 100%;
             text-wrap: wrap;
             text-align: justify;
         }

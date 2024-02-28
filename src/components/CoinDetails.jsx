@@ -68,8 +68,9 @@ const CoinDetails = () => {
           <div className="coinDescription">
             {coin.description['en'].split('.')[0]}
           </div>
-          <CoinChart/>
         </div>
+        <CoinChart currency={ currency}/>
+
   </div>
   
   </>
