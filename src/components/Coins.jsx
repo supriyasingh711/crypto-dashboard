@@ -12,6 +12,7 @@ const Coins = () => {
     const[coins,setCoins]=useState([])
     const[currency,setCurrency]=useState('inr');
     const currencySymbol=currency==='inr'? '₹':'$';
+    const [search,setSearch]=useState([])
     //now we hVE TO FETCH THE URL RESPONSE DATA
     useEffect(()=>{
       const getCoinsData=async()=>{
@@ -28,12 +29,21 @@ const Coins = () => {
       {
         loading?<Loader/>:<>
         <Header/>
+        <div className="searchBar">
+          <input type="text" placeholder='Search Your Coin' onChange={(e)=>setSearch(e.target.value)} name="" id="" />
+        </div>
         <div className="btns">
           <button onClick={()=>{setCurrency('inr')}}>inr</button>
           <button onClick={()=>{setCurrency('usd')}}>usd</button>
         </div>
         {
-          coins.map((item,i)=>{
+          coins.filter((data)=>{
+            if(data == ''){
+              return data
+            }else if(data.name.toLowerCase().includes(search)){
+              return data
+            }
+          }).map((item,i)=>{
             return(
              <CoinCard key={i} id={item.id} item={item} i={i} currencySymbol={currencySymbol} />
             )

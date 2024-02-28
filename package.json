@@ -14,6 +14,8 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource/ubuntu": "^5.0.8",
+    "@react-three/drei": "^9.99.4",
+    "@react-three/fiber": "^8.15.16",
     "axios": "^1.6.7",
     "chart.js": "^4.4.1",
     "chartjs": "^0.3.24",
@@ -24,7 +26,8 @@
     "react-icons": "^5.0.1",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.22.1",
-    "sass": "^1.71.1"
+    "sass": "^1.71.1",
+    "three": "^0.161.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
