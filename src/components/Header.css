@@ -1,10 +1,8 @@
-
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
-
+    width: 100%;
+    justify-content:center;
 }
 .navbar ul {
 display: flex;
@@ -12,10 +10,10 @@ list-style: none;
 padding-bottom: 10px;
 }
 .navbar ul li a{
-margin-left: 15rem;
+margin: 0.6rem;
 text-decoration: none;
 color: white;
-font-size: 20px;
+font-size: 1.5rem;
 }
 .logo
 {

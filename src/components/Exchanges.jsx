@@ -5,7 +5,7 @@ import { baseUrl } from './baseUrl'
 import Loader from './Loader'
 import ethLogo from '../assets/pics/ethLogo.jpg'
 import './Exchanges.css'
-import OurModel from './OurModel'
+
 
 
 const Exchanges = () => {

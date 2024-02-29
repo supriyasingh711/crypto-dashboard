@@ -76,6 +76,8 @@ const CoinChart = (currency) => {
     <div>
 
 <Line data={Mydata} options={{
+
+    
    elements:{
        point:{
            radius:1

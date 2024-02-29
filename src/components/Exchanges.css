@@ -1,11 +1,19 @@
 .ex-cards{
     display:flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 5rem;
+    justify-content: space-between;
+    margin: 2rem;
+    width:100%;
+    gap:1rem;
 }
 .name{
     width: 5rem;
+}
+.image{
+    width: 5rem;
+}
+.image img{
+    border-radius: 50%;
 }
 .price{
     width: 5rem;
