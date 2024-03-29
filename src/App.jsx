@@ -10,9 +10,9 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<Exchanges/>} />
-      <Route path="/coins" element={<Coins/>} />
-      <Route path="/coins/:id" element={<CoinDetails/>} />
+      <Route path="/crypto-dashboard/" element={<Exchanges/>} />
+      <Route path="/crypto-dashboard/coins" element={<Coins/>} />
+      <Route path="/crypto-dashboard/coins/:id" element={<CoinDetails/>} />
     </Routes>
     </>
   )
